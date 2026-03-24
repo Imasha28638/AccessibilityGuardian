@@ -352,17 +352,17 @@ cd AccessibilityGuardian
 ```markdown
 ## Screenshots
 ### Home
-![Home Screen](screenshots/Home.png)
+![Home Screen](screenshots/Home.jpeg)
 
 
 ### Logs
-![Logs](screenshots/Logs.png)
+![Logs](screenshots/Logs.jpeg)
 
 ### Inspect
-![Inspect](screenshots/Inspect.png)
+![Inspect](screenshots/Inspect.jpeg)
 
 ### Settings
-![Settings](screenshots/Settings.png)
+![Settings](screenshots/Settings.jpeg)
 ```
 
 ## Academic Context
