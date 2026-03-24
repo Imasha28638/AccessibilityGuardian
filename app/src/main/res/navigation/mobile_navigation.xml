@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_monitor">
+
+    <fragment
+        android:id="@+id/navigation_monitor"
+        android:name="com.sliit.isp.accessibilityguardian.ui.MonitorFragment"
+        android:label="Monitor"
+        tools:layout="@layout/fragment_monitor" />
+
+    <fragment
+        android:id="@+id/navigation_logs"
+        android:name="com.sliit.isp.accessibilityguardian.ui.LogsFragment"
+        android:label="Logs"
+        tools:layout="@layout/fragment_logs" />
+
+    <fragment
+        android:id="@+id/navigation_inspect"
+        android:name="com.sliit.isp.accessibilityguardian.ui.inspect.InspectFragment"
+        android:label="Inspect"
+        tools:layout="@layout/fragment_inspect">
+        <argument
+            android:name="package_name"
+            app:argType="string"
+            android:defaultValue="@null" />
+        <argument
+            android:name="selected_log_id"
+            app:argType="long"
+            android:defaultValue="-1L" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.sliit.isp.accessibilityguardian.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment_activity_main"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/mobile_navigation"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/customBottomNav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Fixed custom bottom nav -->
+    <LinearLayout
+        android:id="@+id/customBottomNav"
+        android:layout_width="0dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_bottom_nav"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="10dp"
+        android:baselineAligned="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Monitor -->
+        <LinearLayout
+            android:id="@+id/navMonitor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:id="@+id/iconMonitor"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_nav_monitor"
+                app:tint="@color/ag_accent"
+                android:contentDescription="@string/nav_monitor" />
+
+            <TextView
+                android:id="@+id/textMonitor"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_marginTop="4dp"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                android:text="@string/nav_monitor"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textColor="@color/ag_accent" />
+        </LinearLayout>
+
+        <!-- Logs -->
+        <LinearLayout
+            android:id="@+id/navLogs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:id="@+id/iconLogs"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_nav_logs"
+                app:tint="@color/ag_text_secondary"
+                android:contentDescription="@string/nav_logs" />
+
+            <TextView
+                android:id="@+id/textLogs"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_marginTop="4dp"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                android:text="@string/nav_logs"
+                android:textSize="10sp"
+                android:textColor="@color/ag_text_secondary" />
+        </LinearLayout>
+
+        <!-- Inspect -->
+        <LinearLayout
+            android:id="@+id/navInspect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:id="@+id/iconInspect"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_nav_inspect"
+                app:tint="@color/ag_text_secondary"
+                android:contentDescription="@string/nav_inspect" />
+
+            <TextView
+                android:id="@+id/textInspect"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_marginTop="4dp"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                android:text="@string/nav_inspect"
+                android:textSize="10sp"
+                android:textColor="@color/ag_text_secondary" />
+        </LinearLayout>
+
+        <!-- Settings -->
+        <LinearLayout
+            android:id="@+id/navSettings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:id="@+id/iconSettings"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_nav_settings"
+                app:tint="@color/ag_text_secondary"
+                android:contentDescription="@string/settings" />
+
+            <TextView
+                android:id="@+id/textSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_marginTop="4dp"
+                android:includeFontPadding="false"
+                android:gravity="center"
+                android:text="@string/settings"
+                android:textSize="10sp"
+                android:textColor="@color/ag_text_secondary" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

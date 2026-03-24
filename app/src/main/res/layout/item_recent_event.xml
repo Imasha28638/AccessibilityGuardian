@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/bg_event_item"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/ivEventIcon"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:background="@drawable/bg_event_icon_chip"
+        android:padding="6dp"
+        android:src="@drawable/ic_clipboard_small"
+        android:tint="@color/inspect_red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEventTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="8dp"
+        android:text="Clipboard Data Access Attempt"
+        android:textColor="@color/inspect_text_primary"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/ivEventIcon"
+        app:layout_constraintEnd_toStartOf="@id/tvSeverity"
+        app:layout_constraintTop_toTopOf="@id/ivEventIcon" />
+
+    <TextView
+        android:id="@+id/tvSeverity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_severity_chip_critical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:text="CRITICAL"
+        android:textColor="@color/inspect_red"
+        android:textStyle="bold"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvEventTitle" />
+
+    <TextView
+        android:id="@+id/tvEventSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="App attempted to read clipboard contents"
+        android:textColor="@color/inspect_text_secondary"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@id/ivEventIcon"
+        app:layout_constraintEnd_toStartOf="@id/tvTime"
+        app:layout_constraintTop_toBottomOf="@id/tvEventTitle" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 min ago"
+        android:textColor="@color/inspect_text_secondary"
+        android:textSize="9sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tvEventSubtitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

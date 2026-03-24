@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Backgrounds -->
+    <color name="inspect_bg">#050816</color>
+    <color name="inspect_surface">#0A1020</color>
+    <color name="inspect_card">#10192B</color>
+    <color name="inspect_card_2">#0D1526</color>
+
+    <!-- Borders / strokes -->
+    <color name="inspect_stroke">#1A2A4A</color>
+    <color name="inspect_stroke_soft">#14213A</color>
+    <color name="inspect_divider">#1A2A4A</color>
+
+    <!-- Primary purple-blue glow -->
+    <color name="inspect_primary">#7C4DFF</color>
+    <color name="inspect_primary_dark">#5B35D5</color>
+    <color name="inspect_primary_soft">#2A1F52</color>
+    <color name="inspect_blue">#3B82F6</color>
+
+    <!-- Text -->
+    <color name="inspect_text_primary">#F4F7FF</color>
+    <color name="inspect_text_secondary">#8EA0C6</color>
+    <color name="inspect_text_muted">#5F6F93</color>
+
+    <!-- Status colors -->
+    <color name="inspect_high">#FF8A3D</color>
+    <color name="inspect_medium">#F2C94C</color>
+    <color name="inspect_low">#27C281</color>
+    <color name="inspect_danger">#FF5A6B</color>
+
+    <!-- Explicit status colors used in code -->
+    <color name="inspect_red">#FF5A6B</color>
+    <color name="inspect_orange">#FF8A3D</color>
+    <color name="inspect_yellow">#F2C94C</color>
+    <color name="inspect_purple">#7C4DFF</color>
+
+    <!-- Gauge track -->
+    <color name="inspect_gauge_track">#16233B</color>
+    <color name="inspect_gauge_fill_start">#7C4DFF</color>
+    <color name="inspect_gauge_fill_mid">#A855F7</color>
+    <color name="inspect_gauge_fill_end">#FF8A3D</color>
+
+    <!-- Chips / pills -->
+    <color name="inspect_chip_bg">#131D33</color>
+    <color name="inspect_chip_border">#223555</color>
+</resources>

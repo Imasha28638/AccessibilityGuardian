@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/navigation_monitor" android:title="Monitor" android:icon="@android:drawable/ic_menu_view"/>
+    <item android:id="@+id/navigation_logs" android:title="Logs" android:icon="@android:drawable/ic_menu_recent_history"/>
+    <item android:id="@+id/navigation_inspect" android:title="Inspect" android:icon="@android:drawable/ic_menu_search"/>
+    <item android:id="@+id/navigation_settings" android:title="Settings" android:icon="@android:drawable/ic_menu_manage"/>
+</menu>

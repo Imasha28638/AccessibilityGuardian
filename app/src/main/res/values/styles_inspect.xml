@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.AccessGuard.ButtonGhost" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/inspect_text_primary</item>
+        <item name="strokeColor">@color/inspect_divider</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="backgroundTint">#101A31</item>
+        <item name="iconTint">@color/inspect_text_secondary</item>
+    </style>
+
+    <style name="Widget.AccessGuard.ButtonDanger" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/inspect_red</item>
+        <item name="strokeColor">@color/inspect_red</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="backgroundTint">#1B0B12</item>
+        <item name="iconTint">@color/inspect_red</item>
+    </style>
+
+    <style name="Widget.AccessGuard.ButtonOutline" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/inspect_purple</item>
+        <item name="strokeColor">@color/inspect_divider</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="backgroundTint">#0E1730</item>
+        <item name="iconTint">@color/inspect_purple</item>
+    </style>
+
+</resources>

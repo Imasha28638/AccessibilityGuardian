@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Backgrounds -->
+    <color name="bg_main">#0B0E17</color>
+    <color name="card_primary">#111525</color>
+    <color name="card_secondary">#151A2E</color>
+    <color name="card_border">#2A3048</color>
+    <color name="card_border_alpha">#662A3048</color> <!-- ~40% alpha -->
+
+    <!-- Accents -->
+    <color name="accent_green">#1ED760</color>
+    <color name="accent_violet">#6C63FF</color>
+    <color name="gauge_orange_start">#FF7A00</color>
+    <color name="gauge_orange_end">#FF9A1F</color>
+
+    <!-- Status Colors -->
+    <color name="status_green">#22C55E</color>
+    <color name="status_red">#F04444</color>
+
+    <!-- Text Colors -->
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_secondary_gray">#9AA3B2</color>
+    <color name="text_muted_gray">#6E7686</color>
+
+    <!-- Legacy / Compatibility (Mapping old to new where possible) -->
+    <color name="bg">@color/bg_main</color>
+    <color name="surface">@color/card_primary</color>
+    <color name="surface2">@color/card_secondary</color>
+    <color name="stroke">@color/card_border</color>
+    <color name="textPrimary">@color/text_white</color>
+    <color name="textSecondary">@color/text_secondary_gray</color>
+    <color name="accent">@color/accent_violet</color>
+    <color name="ok">@color/accent_green</color>
+
+    <!-- AG specific (used by latest UI updates) -->
+    <color name="ag_accent">#6C63FF</color>
+    <color name="ag_text_secondary">#9AA3B2</color>
+    <color name="ag_text_muted">#6E7686</color>
+
+    <!-- Risk Levels -->
+    <color name="risk_critical">#FF3B30</color>
+    <color name="risk_high">#FF9500</color>
+    <color name="risk_medium">#FFD60A</color>
+    <color name="risk_low">#1ED760</color>
+    <color name="service_status_active">@color/status_green</color>
+    <color name="service_status_inactive">@color/status_red</color>
+
+    <color name="gaugeTrack">#2A3040</color>
+    <color name="gaugeOrange">#FF8A1F</color>
+
+    <!-- ===== Missing legacy/common colors (restore to fix resource linking) ===== -->
+
+    <!-- Switch colors (used by switch_track_selector.xml / switch_thumb_selector.xml) -->
+    <color name="switch_on_thumb">#F7F8FA</color>
+    <color name="switch_off_thumb">#7E8798</color>
+    <color name="switch_on_track">#19D85A</color>
+    <color name="switch_off_track">#2A3142</color>
+
+    <!-- Card / gradient colors (used by bg_card_glow.xml / bg_page_gradient.xml) -->
+    <color name="card_stroke">#2A3048</color>
+    <color name="card_fill">#111525</color>
+
+    <color name="bg_top">#0B0E17</color>
+    <color name="bg_mid">#0D1220</color>
+    <color name="bg_bottom">#090C14</color>
+
+    <!-- Settings page colors (used by fragment_settings.xml) -->
+    <color name="neon_purple">#6C63FF</color>
+    <color name="neon_purple_soft">#8A7BFF</color>
+
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#9AA3B2</color>
+    <color name="text_muted">#6E7686</color>
+
+    <color name="divider_soft">#2A3048</color>
+
+    <!-- ===== Additional missing settings-page colors ===== -->
+
+    <!-- Pills / badges text colors -->
+    <color name="pill_orange_text">#FFB347</color>
+    <color name="pill_green_text">#56E39F</color>
+    <color name="pill_purple_text">#B39DFF</color>
+
+    <!-- Cyan accent (used by outlined chip/button/text) -->
+    <color name="cyan_text">#63E6FF</color>
+    <color name="cyan_stroke">#2E8FA3</color>
+
+    <!-- Soft outlines -->
+    <color name="outline_soft">#2A3048</color>
+</resources>

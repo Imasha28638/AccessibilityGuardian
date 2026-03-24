@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@color/surface"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/stroke">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp">
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@android:drawable/sym_def_app_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textPrimary"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginStart="12dp"
+            app:layout_constraintStart_toEndOf="@id/ivIcon"
+            app:layout_constraintTop_toTopOf="@id/ivIcon"
+            app:layout_constraintEnd_toStartOf="@id/tvRiskPill"
+            tools:text="WhatsApp" />
+
+        <TextView
+            android:id="@+id/tvPackage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textSecondary"
+            android:textSize="11sp"
+            android:layout_marginStart="12dp"
+            app:layout_constraintStart_toEndOf="@id/ivIcon"
+            app:layout_constraintTop_toBottomOf="@id/tvAppName"
+            app:layout_constraintEnd_toStartOf="@id/tvRiskPill"
+            tools:text="com.whatsapp" />
+
+        <!-- Risk pill -->
+        <TextView
+            android:id="@+id/tvRiskPill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:textColor="@color/textPrimary"
+            android:background="@drawable/bg_chip"
+            app:layout_constraintEnd_toStartOf="@id/ivChevron"
+            app:layout_constraintTop_toTopOf="@id/ivIcon"
+            tools:text="CRITICAL" />
+
+        <ImageView
+            android:id="@+id/ivChevron"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@android:drawable/arrow_down_float"
+            app:tint="@color/textSecondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ivIcon"/>
+
+        <!-- Bullet 1 -->
+        <TextView
+            android:id="@+id/tvBullet1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textSecondary"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@id/tvAppName"
+            app:layout_constraintTop_toBottomOf="@id/tvPackage"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="• Rapid automated clicks detected" />
+
+        <!-- Footer -->
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textSecondary"
+            android:textSize="11sp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@id/tvAppName"
+            app:layout_constraintTop_toBottomOf="@id/tvBullet1"
+            tools:text="Today, 14:32:08" />
+
+        <TextView
+            android:id="@+id/tvCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/accent"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvBullet1"
+            tools:text="247 events" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
