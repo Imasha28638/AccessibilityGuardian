@@ -349,7 +349,7 @@ cd AccessibilityGuardian
 
 ## Screenshots
 
-```markdown
+
 ## Screenshots
 ### Home
 ![Home Screen](screenshots/Home.jpeg)
@@ -363,7 +363,7 @@ cd AccessibilityGuardian
 
 ### Settings
 ![Settings](screenshots/Settings.jpeg)
-```
+
 
 ## Academic Context
 
